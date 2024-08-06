@@ -1,0 +1,39 @@
+
+.p{
+    background-color: #1a252f;
+    height: 100px;
+    color: white;
+    text-align: center;
+
+}
+.p p{
+    padding-top: 50px;
+}
+
+.footer{
+ 
+    /* margin-top: 50px !important; */
+    border: 2PX white SOLID;
+ 
+    
+}
+
+.card-group,.footer,.card{
+    background-color: #2c3e50 !important;
+    color: white;
+    padding: 40px;
+
+}
+.icons{
+    padding-top: 10%;
+}
+i{
+    border: 2PX white SOLID;
+    padding: 7px;
+    border-radius: 50%;
+
+}
+
+.card{
+    border: none;
+}

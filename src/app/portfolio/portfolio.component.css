@@ -1,0 +1,33 @@
+.main{
+    padding-top: 100px;
+}
+
+.a1{
+    position: relative;
+    margin: 10px;
+}
+.line{
+ 
+    color: blue;
+    width: 100px;
+    height: 5px;
+    /* position: absolute; */
+    /* left: 37% ; */
+}
+
+
+.layer__ i{
+    display: none;
+   
+    transition: all 0.7s;
+}
+
+.layer__:hover{
+    background-color:#1abc9ca8;
+    
+    transition: all 0.7s;
+    i{
+        display: block;
+        /* transition: all 0.7s; */
+    }
+}

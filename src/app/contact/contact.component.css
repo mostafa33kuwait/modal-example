@@ -1,0 +1,19 @@
+.main{
+    padding-top: 100px;
+    /* background-color: #1abc9c; */
+    height: 100vh;
+    
+
+}
+
+.a1{
+    position: relative;
+    margin: 10px;
+}
+.line{
+ 
+    color: blue;
+    width: 100px;
+    height: 5px;
+
+}
