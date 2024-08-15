@@ -14,57 +14,70 @@
 
       
     <div  class="container ">
-      <div  class="row g-5 ">
+      <div  class=" row g-5" >
                           
         <div  class="col-lg-4 col-md-6">
-          <div  class="overflow-hidden rounded-3 position-relative">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port1.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-              <i  class="text-white fa-solid fa-plus fa-6x"></i>
+          <div class="overflow-hidden rounded-3 position-relative">
+            <img class="w-100 rounded-3" src="../../assets/img/port1.png"  >
+            <div class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port1.png')">
+              <i class="text-white fa-solid fa-plus fa-6x" ></i>
             </div>
           </div>
         </div>
         <div  class="col-lg-4 col-md-6">
           <div  class="overflow-hidden rounded-3 position-relative">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port2.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <img  alt="" class="w-100 rounded-3"  src="../../assets/img/port2.png">
+            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port2.png')">
+              <i  class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="overflow-hidden rounded-3 position-relative ">
+            <img  alt="" class="w-100 rounded-3"  src="../../assets/img/port3.png">
+            <div class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port3.png')">
+              <i class="text-white fa-solid fa-plus fa-6x" ></i>
+            </div>
+          </div>
+        </div>
+        <div  class="col-lg-4 col-md-6">
+          <div  class="overflow-hidden rounded-3 position-relative">
+            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port1.png')">
+              <i  class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+            <img  alt="" class="w-100 rounded-3"  src="../../assets/img/port1.png"  >
+
+          </div>
+        </div>
+        <div  class="col-lg-4 col-md-6">
+          <div  class="overflow-hidden rounded-3 position-relative ">
+            <img  alt="" class="w-100 rounded-3"  src="../../assets/img/port2.png">
+            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port2.png')">
               <i  class="text-white fa-solid fa-plus fa-6x"></i>
             </div>
           </div>
         </div>
         <div  class="col-lg-4 col-md-6 ">
           <div  class="overflow-hidden rounded-3 position-relative ">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port3.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-              <i  class="text-white fa-solid fa-plus fa-6x"></i>
-            </div>
-          </div>
-        </div>
-        <div  class="col-lg-4 col-md-6">
-          <div  class="overflow-hidden rounded-3 position-relative">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port1.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-              <i  class="text-white fa-solid fa-plus fa-6x"></i>
-            </div>
-          </div>
-        </div>
-        <div  class="col-lg-4 col-md-6">
-          <div  class="overflow-hidden rounded-3 position-relative">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port2.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-              <i  class="text-white fa-solid fa-plus fa-6x"></i>
-            </div>
-          </div>
-        </div>
-        <div  class="col-lg-4 col-md-6 ">
-          <div  class="overflow-hidden rounded-3 position-relative ">
-            <img  alt="" class="w-100 rounded-3" src="../../assets/img/port3.png">
-            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <img  alt="" class="w-100 rounded-3"  src="../../assets/img/port3.png">
+            <div  class="top-0 layer__ position-absolute start-0 w-100 h-100 d-flex justify-content-center align-items-center" (click)="open('../../assets/img/port3.png')">
               <i  class="text-white fa-solid fa-plus fa-6x"></i>
             </div>
           </div>
         </div>      
       </div>
+
+      @if(isClicked==true){
+
+        <div class="bg-transparent1 aa " (click)="close()">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <img [src]="imgsrc" alt="" class="pt-5 w-100 position-relative">
+            <i (click)="close()" class=" fa-solid fa-xmark position-absolute fa-2xl text-primary" style="right: 3%; top: 15%;"></i>
+          </div>
+        </div>
+        
+      }
+
 
     </div>
   </div>

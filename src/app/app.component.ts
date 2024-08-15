@@ -16,4 +16,15 @@ import { ContactComponent } from "./contact/contact.component";
 })
 export class AppComponent {
   title = 'app2';
+
+
+
+
+
+
+
+
+
+
+
 }

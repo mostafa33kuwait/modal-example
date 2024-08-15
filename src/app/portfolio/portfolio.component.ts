@@ -8,6 +8,37 @@ import { Component } from '@angular/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
+
 export class PortfolioComponent {
 
+  isClicked:boolean=false;
+
+  imgsrc!:string;
+
+
+  open(src:string){
+    console.log('open');
+    console.log(src);
+    this.imgsrc=src
+    
+    
+    this.isClicked=true;
+
+  }
+
+close(){
+  this.isClicked=false;
 }
+
+
+open1(){
+  console.log('sss');
+  
+}
+
+
+
+
+
+}
+
